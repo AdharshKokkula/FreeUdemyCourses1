@@ -1,12 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
 import { Badge } from "./ui/badge";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Info } from "lucide-react";
 
 const CourseCard = ({
   id = "1",
   title = "Complete Web Development Bootcamp 2023",
+  slug = "complete-web-development-bootcamp-2023",
   thumbnail = "https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=500&q=80",
   originalPrice = "$94.99",
   category = "Development",
@@ -17,22 +19,27 @@ const CourseCard = ({
 }) => {
   return (
     <Card className="w-full max-w-[280px] overflow-hidden h-[320px] flex flex-col bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
-      <div className="relative">
-        <img
-          src={thumbnail}
-          alt={title}
-          className="w-full h-[140px] object-cover"
-        />
-        <Badge className="absolute top-2 right-2 bg-red-500 hover:bg-red-600">
-          FREE
-        </Badge>
-      </div>
+      <Link to={`/course/${slug}`} className="group">
+        <div className="relative">
+          <img
+            src={thumbnail}
+            alt={title}
+            className="w-full h-[140px] object-cover group-hover:opacity-90 transition-opacity"
+          />
+          <Badge className="absolute top-2 right-2 bg-red-500 hover:bg-red-600">
+            FREE
+          </Badge>
+        </div>
 
-      <CardHeader className="p-3 pb-0">
-        <h3 className="font-bold text-sm line-clamp-2 h-10" title={title}>
-          {title}
-        </h3>
-      </CardHeader>
+        <CardHeader className="p-3 pb-0">
+          <h3
+            className="font-bold text-sm line-clamp-2 h-10 group-hover:text-blue-600 transition-colors"
+            title={title}
+          >
+            {title}
+          </h3>
+        </CardHeader>
+      </Link>
 
       <CardContent className="p-3 pt-1 flex-grow">
         <div className="flex items-center text-sm text-gray-500 mb-1">
@@ -67,14 +74,23 @@ const CourseCard = ({
         </div>
       </CardContent>
 
-      <CardFooter className="p-3 pt-0">
+      <CardFooter className="p-3 pt-0 flex gap-2">
         <Button
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center gap-1"
+          className="flex-1 bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center"
+          asChild
+        >
+          <Link to={`/course/${slug}`}>
+            <Info className="h-4 w-4 mr-1" /> Details
+          </Link>
+        </Button>
+
+        <Button
+          className="flex-1 bg-green-600 hover:bg-green-700 text-white flex items-center justify-center"
           onClick={() =>
             window.open(`${courseUrl}?couponCode=${couponCode}`, "_blank")
           }
         >
-          Get Course <ExternalLink className="h-4 w-4 ml-1" />
+          Get <ExternalLink className="h-4 w-4 ml-1" />
         </Button>
       </CardFooter>
     </Card>
