@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Udemy Courses</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="min-h-screen flex flex-col bg-gray-100">
+      <!-- Header with navigation and top ad -->
+      <header
+        class="w-full bg-white border-b border-gray-200 shadow-sm sticky top-0 z-50"
+      >
+        <!-- Ad Banner at the very top -->
+        <div class="w-full bg-blue-50 p-2 text-center text-sm">
+          <div class="max-w-7xl mx-auto">
+            <p class="text-gray-600">
+              Advertisement Space - Google AdSense Banner
+            </p>
+          </div>
+        </div>
+
+        <!-- Main Header Content -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center h-16">
+            <!-- Logo and Site Title -->
+            <div class="flex items-center">
+              <img src="/vite.svg" alt="Logo" class="h-8 w-8 mr-2" />
+              <span class="text-xl font-bold text-blue-600"
+                >FreeUdemyCourses</span
+              >
+            </div>
+
+            <!-- Navigation Links - Hidden on mobile -->
+            <nav class="hidden md:flex space-x-6">
+              <a
+                href="/"
+                class="text-gray-600 hover:text-blue-600 transition-colors"
+                >Home</a
+              >
+              <a
+                href="/categories"
+                class="text-gray-600 hover:text-blue-600 transition-colors"
+                >Categories</a
+              >
+              <a
+                href="/new"
+                class="text-gray-600 hover:text-blue-600 transition-colors"
+                >New Courses</a
+              >
+              <a
+                href="/about"
+                class="text-gray-600 hover:text-blue-600 transition-colors"
+                >About</a
+              >
+              <a
+                href="/contact"
+                class="text-gray-600 hover:text-blue-600 transition-colors"
+                >Contact</a
+              >
+            </nav>
+
+            <!-- Search and Mobile Menu -->
+            <div class="flex items-center space-x-4">
+              <button class="text-gray-600 p-2 rounded-full hover:bg-gray-100">
+                <i class="fas fa-search h-5 w-5"></i>
+              </button>
+
+              <!-- Mobile Menu Button - Only visible on mobile -->
+              <button
+                class="md:hidden text-gray-600 p-2 rounded-full hover:bg-gray-100"
+              >
+                <i class="fas fa-bars h-6 w-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="flex-grow container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-gray-900 mb-6 text-center">
+          Free Udemy Courses with Coupon Codes
+        </h1>
+        <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">
+          Get access to premium Udemy courses for free! We find and verify the
+          best coupon codes so you can learn new skills without spending a
+          penny.
+        </p>
+
+        <!-- Category Filter -->
+        <div class="mb-8">
+          <div class="w-full bg-white shadow-sm py-4 px-2 mb-6">
+            <div class="w-full overflow-x-auto">
+              <div id="category-buttons" class="flex space-x-2 pb-1">
+                <!-- Category buttons will be inserted here by JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main content area with course grid and sidebar -->
+        <div class="flex flex-col lg:flex-row gap-8">
+          <!-- Course Grid - Takes more space -->
+          <div class="flex-grow">
+            <div id="course-grid" class="bg-gray-50 p-4 rounded-lg">
+              <!-- Courses will be inserted here by JavaScript -->
+            </div>
+          </div>
+
+          <!-- Sidebar with ads - Fixed width -->
+          <aside
+            class="w-[300px] h-[600px] flex flex-col gap-6 bg-white hidden lg:block"
+          >
+            <!-- Top Ad Banner -->
+            <div class="overflow-hidden border border-gray-200 shadow-sm">
+              <div class="p-0">
+                <div
+                  class="bg-gray-100 h-[250px] flex items-center justify-center"
+                >
+                  <div class="text-center p-4">
+                    <p class="text-sm text-gray-500 mb-2">ADVERTISEMENT</p>
+                    <div
+                      class="bg-gray-200 h-[200px] w-full flex items-center justify-center"
+                    >
+                      <p class="text-gray-400 text-sm">Google AdSense Banner</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Popular Categories Section -->
+            <div class="overflow-hidden border border-gray-200 shadow-sm">
+              <div class="p-4">
+                <h3 class="font-semibold text-lg mb-3">Popular Categories</h3>
+                <div class="h-[1px] bg-gray-200 mb-3"></div>
+                <ul class="space-y-2">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-blue-600 hover:text-blue-800 hover:underline text-sm block py-1"
+                      >Web Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-blue-600 hover:text-blue-800 hover:underline text-sm block py-1"
+                      >Data Science</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-blue-600 hover:text-blue-800 hover:underline text-sm block py-1"
+                      >Business</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-blue-600 hover:text-blue-800 hover:underline text-sm block py-1"
+                      >IT & Software</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-blue-600 hover:text-blue-800 hover:underline text-sm block py-1"
+                      >Design</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-blue-600 hover:text-blue-800 hover:underline text-sm block py-1"
+                      >Marketing</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Bottom Ad Banner -->
+            <div class="overflow-hidden border border-gray-200 shadow-sm">
+              <div class="p-0">
+                <div
+                  class="bg-gray-100 h-[250px] flex items-center justify-center"
+                >
+                  <div class="text-center p-4">
+                    <p class="text-sm text-gray-500 mb-2">ADVERTISEMENT</p>
+                    <div
+                      class="bg-gray-200 h-[200px] w-full flex items-center justify-center"
+                    >
+                      <p class="text-gray-400 text-sm">Google AdSense Banner</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </main>
+
+      <!-- Footer with links and bottom ad -->
+      <footer class="w-full bg-gray-900 text-white py-8 mt-10">
+        <div class="container mx-auto px-4">
+          <!-- Ad Banner -->
+          <div
+            class="w-full h-24 bg-gray-800 mb-8 flex items-center justify-center rounded-md"
+          >
+            <p class="text-gray-400">Advertisement Banner</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- About Section -->
+            <div class="col-span-1 md:col-span-2">
+              <h3 class="text-xl font-bold mb-4">Udemy Free Courses</h3>
+              <p class="text-gray-300 mb-4">
+                Find the best free Udemy courses with coupon codes. Learn new
+                skills without spending a penny.
+              </p>
+              <button
+                class="text-white border-white hover:bg-gray-800 border rounded px-4 py-2 flex items-center"
+              >
+                <i class="fas fa-external-link-alt mr-2 h-4 w-4"></i>
+                Visit Udemy
+              </button>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+              <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:text-white transition-colors"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:text-white transition-colors"
+                    >Categories</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:text-white transition-colors"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:text-white transition-colors"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:text-white transition-colors"
+                    >Terms of Service</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contact & Social -->
+            <div>
+              <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+              <a
+                href="mailto:contact@udemyfreecourses.com"
+                class="flex items-center text-gray-300 hover:text-white transition-colors mb-4"
+              >
+                <i class="fas fa-envelope mr-2 h-4 w-4"></i>
+                contact@udemyfreecourses.com
+              </a>
+
+              <div class="flex space-x-4 mt-4">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-gray-300 hover:text-white transition-colors"
+                >
+                  <i class="fab fa-facebook h-5 w-5"></i>
+                </a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-gray-300 hover:text-white transition-colors"
+                >
+                  <i class="fab fa-twitter h-5 w-5"></i>
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-gray-300 hover:text-white transition-colors"
+                >
+                  <i class="fab fa-instagram h-5 w-5"></i>
+                </a>
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-gray-300 hover:text-white transition-colors"
+                >
+                  <i class="fab fa-youtube h-5 w-5"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400 text-sm"
+          >
+            <p>
+              &copy; <span id="current-year"></span> Udemy Free Courses. All
+              rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Popup Ad -->
+      <div
+        id="popup-ad"
+        class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"
+      >
+        <div class="sm:max-w-md bg-white rounded-lg overflow-hidden relative">
+          <button
+            id="close-popup"
+            class="absolute right-4 top-4 z-10 h-8 w-8 rounded-full bg-white/80 hover:bg-white/90 flex items-center justify-center"
+          >
+            <i class="fas fa-times h-4 w-4"></i>
+          </button>
+
+          <div class="flex flex-col bg-white">
+            <div class="relative w-full h-48 overflow-hidden">
+              <img
+                id="popup-image"
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80"
+                alt="Special offer"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/50 to-transparent"
+              ></div>
+            </div>
+
+            <div class="p-6 pb-2">
+              <h2 id="popup-title" class="text-2xl font-bold text-center">
+                Special Offer Just For You!
+              </h2>
+              <p id="popup-description" class="text-center mt-2">
+                Get access to premium programming courses with 50% off using our
+                exclusive partner link. Limited time offer!
+              </p>
+            </div>
+
+            <div class="p-6 pt-2 flex flex-col items-center">
+              <button
+                id="popup-cta"
+                class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md font-medium"
+              >
+                Get This Deal
+              </button>
+              <p class="text-xs text-gray-500 mt-4 text-center">
+                By clicking the button, you'll be redirected to our partner's
+                website.<br />
+                This helps support our free course listings.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
