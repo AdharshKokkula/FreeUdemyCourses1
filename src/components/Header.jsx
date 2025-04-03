@@ -4,7 +4,7 @@ import { Search } from "lucide-react";
 
 const Header = ({
   siteTitle = "FreeUdemyCourses",
-  logoUrl = "/vite.svg",
+  logoUrl = "/logo.png",
   navLinks = [
     { title: "Home", href: "/" },
     { title: "Categories", href: "/categories" },
