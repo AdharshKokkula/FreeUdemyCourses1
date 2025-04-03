@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import CourseCard from "./CourseCard";
 import AdBanner from "./AdBanner";
 import { Skeleton } from "./ui/skeleton";
