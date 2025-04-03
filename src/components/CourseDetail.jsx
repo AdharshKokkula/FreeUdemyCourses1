@@ -10,9 +10,9 @@ import GenerateLinkButton from "./GenerateLinkButton";
 import Header from "./Header";
 import Footer from "./Footer";
 
-const CourseDetail = () => {
+const CourseDetail = ({ mockCourse }) => {
   const { slug } = useParams();
-  const course = getCourseBySlug(slug);
+  const course = mockCourse || getCourseBySlug(slug);
   const [timeLeft, setTimeLeft] = useState(30);
   const [timerActive, setTimerActive] = useState(false);
   const [linkEnabled, setLinkEnabled] = useState(false);
